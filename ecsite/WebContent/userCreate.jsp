@@ -62,9 +62,9 @@
             <div id="top">
                   <p>UserCreate</p>
             </div>
-            </div>
-                  <s:if test="errorMassage !="">
-                      <s:property value="errorMassage" escapae="false" />
+      </div>
+                  <s:if test="errorMassage !=''">
+                      <s:property value="errorMassage" escape="false" />
                   </s:if>
                   <table>
                   <s:form action="UserCreateConfirmAction">
@@ -84,6 +84,7 @@
                                 <input type="text" name="loginPassword" value="" />
                           </td>
                   </tr>
+                  <tr>
                            <td>
                                  <label>ユーザー名:</label>
                            </td>
@@ -96,8 +97,7 @@
                   </table>
                   <div>
                             <span>前画面に戻る場合は</span>
-                            <a href=`<s:url action="HomeAction" />`>こちら</a>
-                            </div>
+                            <a href=`<s:url action="HomeAction" />'>こちら</a>
                   </div>
                   <div id="footer">
                         <div id="pr">
