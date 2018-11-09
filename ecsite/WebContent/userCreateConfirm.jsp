@@ -79,7 +79,7 @@
                                                 <label>ログインPASS:</label>
                                            </td>
                                            <td>
-                                                <s:property value=loginPassword" escape="false" />
+                                                <input type="text" name="loginPassword" value="" />
                                            </td>
                                     </tr>
                                     <tr id="box">
